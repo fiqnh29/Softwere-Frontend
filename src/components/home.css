@@ -1,0 +1,189 @@
+
+.Header-Container{
+    min-height: 100vh;
+    background-image: url('./image/bg-webwhite.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 50px;
+
+}
+.Navbar-Container{
+    padding: 20px;
+    /* background: #333; */
+    /* font-family: 'ABeeZee', sans-serif; */
+    font-size: 25px;
+    font-weight: 500;
+}
+.Menu-Bars{
+    display: none;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+li{
+    float: right;
+}
+
+li a{
+    display: block;;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.Header-Content{
+    /* background: orange; */
+    
+}
+.Header-Image{
+    width: 60%;
+    margin: auto;
+    margin-top: 30%;
+}
+.Header-Txt{
+    padding: 20px;
+}
+.Header-Txt h1{
+    /* font-family: 'ABeeZee', sans-serif; */
+    font-size: 110px;
+    font-weight: 700;
+    
+}
+.Header-Txt p{
+    /* font-family: 'ABeeZee', sans-serif; */
+    font-size: 30px;
+}
+
+/* About Us */
+.About-Container{
+    min-height: 50vh;
+    /* background: orange; */
+    padding: 50px 0;
+}
+.About-Txt{
+    margin: auto;
+}
+.About-Txt h1{
+    font-size: 80px;
+    font-weight: 700;
+}
+.About-Txt p{
+    font-size: 30px;
+    font-weight: 500;
+}
+.About-Img{
+    width: 80%;
+    margin: auto;
+}
+
+/* Pricing */
+
+.Pricing-Container{
+    min-height: 70vh;
+    /* background: burlywood; */
+    padding: 50px 0 30px 0;
+    
+}
+.Pricing-Card{
+    /* box-shadow: 5px 5px 5px rgb(141, 141, 141); */
+    /* background: #6C63FF; */
+    border-radius: 20px;
+    color: white;
+    position: relative;
+    padding: 20px;
+    height: 100%;
+    background: white;
+    color: black;
+    transition: all 150ms ease-in-out;
+
+
+}
+.Pricing-Card:hover{
+    transform: scale(1.1);
+
+}
+.Pricing-Card-Content h1{
+    /* background: pink; */
+    margin-bottom: 30px;
+}
+.Pricing-Ul{
+    list-style-type: decimal;
+
+}
+
+/* Contact Us */
+.Contact-Container{
+    padding: 50px 0;
+}
+.Contact-Img{
+    width: 80%;
+    margin: auto;
+}
+.Contact-Txt h1{
+    font-size: 80px;
+    font-weight: 700;
+}
+.Contact-Txt p{
+    font-size: 30px;
+    font-weight: 500;
+}
+@media only screen and (max-width: 768px) {
+    .Nav-Resp{
+        display: none;
+    }
+    .Menu-Bars{
+        display: block;
+    }
+    .Nav-Container{
+        padding: 0;
+
+    }
+    li a{
+        padding: 0;
+    }
+    
+}
+@media only screen and (max-width: 1700px) {
+    .Header-Txt h1{
+        font-size: 80px;
+    }
+    
+}
+@media only screen and (max-width: 1200px) {
+    .Header-Image{
+        width: 90%;
+        margin: auto;
+    }
+    
+}
+
+@media only screen and (max-width: 1999px) {
+    .Header-Txt h1{
+        font-size: 100px;
+    }
+}
+@media only screen and (max-width: 851px) {
+    .Header-Txt h1{
+        font-size: 50px;
+        margin-top: 50px;
+    }
+    .Header-Container{
+        padding-bottom: 20px;
+
+    }
+}
+@media only screen and (max-width: 525px) {
+    .Header-Container{
+        min-height: 60vh;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .Header-Txt h1{
+        font-size: 35px;
+    }
+}
