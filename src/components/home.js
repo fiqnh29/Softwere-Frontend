@@ -6,6 +6,7 @@ import ContactImg from './image/undraw_personal_information_962o.svg';
 
 
 import {IoMdCheckmarkCircleOutline} from 'react-icons/io'
+import {RiMenu3Line, RiCloseLine} from 'react-icons/ri'
 const dataPrice = [
     {
         TierName : 'Basic',
@@ -62,9 +63,30 @@ class Home extends React.Component {
             )
         })
     }
+
+    openSideNav = () => {
+        document.getElementById('SideNav').style.width='100%'
+    }
+
+    closeSideNav = () => {
+        document.getElementById('SideNav').style.width='0'
+    }
+
     render() { 
         return (  
             <div className='Home-Container'>
+                <section id='SideNav' className='Sidenav-Container'>
+                    <div style={{padding : '20px', textAlign:'right'}}>
+                        <button className='SideNav-Btn-Close' onClick={this.closeSideNav}><RiCloseLine size={45}/></button>
+                    </div>
+                    <div className='Sidenav-Link'>
+                        <li ><a href='#about'>About</a></li>
+                        <li ><a href='#pricing'>Pricing</a></li>
+                        <li ><a href='#contact'>Contact</a></li>
+                        <li ><a href='#contact'>Login</a></li>
+
+                    </div>
+                </section>
                 <section  className='Header-Container' >
                     <div className='Navbar-Container'>
                         <ul>
@@ -72,7 +94,7 @@ class Home extends React.Component {
                             <li className='Nav-Resp'><a href='#contact'>Contact</a></li>
                             <li className='Nav-Resp'><a href='#pricing'>Pricing</a></li>
                             <li className='Nav-Resp'><a href='#about'>About</a></li>
-                            <li className='Menu-Bars'><a>XX</a></li>
+                            <li className='Menu-Bars'><button onClick={this.openSideNav} className='SideNav-Btn'><RiMenu3Line size={35}/></button></li>
                         </ul>
                     </div>
                     <div className='Header-Content'>

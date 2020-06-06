@@ -152,6 +152,52 @@ li a:hover{
     font-size: 30px;
     font-weight: 500;
 }
+
+/* Sidenav */
+.Sidenav-Container{
+    height: 100vh;
+    background: white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 3;
+    transition: 0.5s;
+    color: black;
+
+
+}
+
+.SideNav-Btn{
+    background: none;
+    outline: none;
+    border: none;
+    font-weight: 900;
+    font-size: 25px;
+}
+.SideNav-Btn:focus, .SideNav-Btn-Close:focus{
+    outline: none;
+}
+.SideNav-Btn-Close{
+    background: none;
+    border: none;
+
+}
+.Sidenav-Link li{
+    float: left;
+
+}
+.Sidenav-Link li{
+    /* background: #1D8FE1; */
+    display: inline-block;
+    width: 100%;
+    padding: 20px;
+    font-size: 25px;
+    font-weight: 600;
+
+    
+}
+
 @media only screen and (max-width: 768px) {
     .Nav-Resp{
         display: none;
