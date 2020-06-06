@@ -65,13 +65,13 @@ class Home extends React.Component {
     render() { 
         return (  
             <div className='Home-Container'>
-                <section className='Header-Container'>
+                <section  className='Header-Container' >
                     <div className='Navbar-Container'>
                         <ul>
-                            <li style={{float : 'left'}}><a>Logo</a></li>
-                            <li className='Nav-Resp'><a>Contact</a></li>
-                            <li className='Nav-Resp'><a>Pricing</a></li>
-                            <li className='Nav-Resp'><a>About</a></li>
+                            <li style={{float : 'left'}}><a >Logo</a></li>
+                            <li className='Nav-Resp'><a href='#contact'>Contact</a></li>
+                            <li className='Nav-Resp'><a href='#pricing'>Pricing</a></li>
+                            <li className='Nav-Resp'><a href='#about'>About</a></li>
                             <li className='Menu-Bars'><a>XX</a></li>
                         </ul>
                     </div>
@@ -82,14 +82,14 @@ class Home extends React.Component {
                             </div>
                             <div className='col-xl-6  d-flex justify-content-center'>
                                 <div className='Header-Txt m-auto'>
-                                    <h1 >Jasa Pengembangan Software</h1>
+                                    <h1 >Softwere for Business</h1>
                                     <p>Mempermudah anda dalam menjalankan bisnis serta memperhemat biaya produksi</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section className='About-Container d-flex justify-content-center'>
+                <section id='about' className='About-Container d-flex justify-content-center'>
                     <div className='container m-auto'>
                     <div className='row p-0 m-0'>
                         <div className='col-xl-6 d-flex justify-content-center'>
@@ -104,14 +104,14 @@ class Home extends React.Component {
                     </div>
                     </div>
                 </section>
-                <section className='Pricing-Container d-flex justify-content-center'>
+                <section id='pricing' className='Pricing-Container d-flex justify-content-center'>
                         <div className='container m-auto'>
                             <div className='row'>
                                 {this.renderPricing()}
                             </div>
                         </div>
                 </section>
-                <section className='Contact-Container'>
+                <section id='contact' className='Contact-Container' >
                     <div className='container m-auto'>
                     <div className='row p-0 m-0'>
                         <div className='col-xl-6 d-flex justify-content-center'>
