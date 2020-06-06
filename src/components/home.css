@@ -157,7 +157,7 @@ li a:hover{
 .Sidenav-Container{
     height: 100vh;
     background: white;
-    width: 100%;
+    width: 0;
     position: fixed;
     top: 0;
     right: 0;
