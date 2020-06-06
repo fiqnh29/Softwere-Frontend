@@ -3,10 +3,10 @@ import './home.css'
 import HeaderImg from './image/undraw_segment_analysis_bdn4.svg'
 import AboutImg from './image/undraw_dev_focus_b9xo.svg';
 import ContactImg from './image/undraw_personal_information_962o.svg';
-
+import {Link} from 'react-router-dom'
 
 import {IoMdCheckmarkCircleOutline} from 'react-icons/io'
-import {RiMenu3Line, RiCloseLine} from 'react-icons/ri'
+import {RiMenu3Line, RiCloseLine, RiArrowDownSLine} from 'react-icons/ri'
 const dataPrice = [
     {
         TierName : 'Basic',
@@ -56,7 +56,6 @@ class Home extends React.Component {
                                         <div className='Pricing-Li'><IoMdCheckmarkCircleOutline color='green'/>&nbsp;{val}</div>
                                     )
                                 })}
-
                         </div>
                     </div>
                 </div>
@@ -106,11 +105,18 @@ class Home extends React.Component {
                                 <div className='Header-Txt m-auto'>
                                     <h1 >Softwere for Business</h1>
                                     <p>Mempermudah anda dalam menjalankan bisnis serta memperhemat biaya produksi</p>
+                                    <br/>
+                                    <Link to='/login'>
+                                        <button className='Login-Btn'>Login</button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
+                {/* <section className='Scroll-Box'>
+                    <button className='Scroll-Btn'><RiArrowDownSLine size={35}/></button>
+                </section> */}
                 <section id='about' className='About-Container d-flex justify-content-center'>
                     <div className='container m-auto'>
                     <div className='row p-0 m-0'>

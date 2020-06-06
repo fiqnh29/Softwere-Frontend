@@ -131,6 +131,9 @@ li a:hover{
     /* background: pink; */
     margin-bottom: 30px;
 }
+.Pricing-Card-Content h3{
+    margin-bottom: 30px;
+}
 .Pricing-Ul{
     list-style-type: decimal;
 
@@ -198,6 +201,24 @@ li a:hover{
     
 }
 
+.Login-Btn{
+    background: rgb(48,195,238);
+    color: white;
+    width: 200px;
+    font-size: 25px;
+    padding: 10px;
+    /* border: 3px solid #FA6C6B; */
+    border-radius: 40px;
+    border: none;
+    
+}
+.Login-Btn:hover{
+    background: #625EB1;
+}
+.Login-Btn:focus{
+    outline: none;
+
+}
 @media only screen and (max-width: 768px) {
     .Nav-Resp{
         display: none;

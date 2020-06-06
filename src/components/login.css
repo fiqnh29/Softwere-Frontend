@@ -1,0 +1,104 @@
+.Login-Container{
+    background: orange;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-image: url('./image/bg-log.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.Login-Box{
+    /* background: green; */
+    margin: auto;
+    width: 350px;
+    z-index: 1
+
+
+}
+.Login-Input{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    border: none;
+    font-size: 20px;
+    transition: 220ms;
+}
+.Login-Input:focus, .Login-Btn-Log:focus{
+    outline: none
+}
+
+.Login-Btn-Log{
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    background: rgb(48,195,238);
+    border: none;
+    border-radius: 20px;    
+    margin-bottom: 10px;
+    color: #964CF7;
+
+}
+.Login-Btn-Log:hover{
+    background: #F77987;
+    color: white;
+}
+.Login-Input::placeholder{
+    color: #964CF7;
+}
+.Login-Input:focus{
+    background: #B796F1;
+    color: white;
+    width: 120%;
+}
+.Login-With button{
+    width: 55px;
+    height: 55px;
+    border: none;
+    border-radius: 50%;
+
+}
+.Login-With p{
+    text-align: left;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+.Login-Img{
+    width: 300px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+
+
+}
+
+@media only screen and (max-width: 650px) {
+    .Login-Box{
+        width: 300px;
+    }
+    .Login-Img{
+        width: 250px;
+        top: 55%;
+        left: 45%;
+    }
+    .Login-Input:focus{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 485px) {
+    .Login-Img{
+        width: 230px;
+        top:70%;
+        left: 35%;
+    }
+}
+@media only screen and (max-width: 376px) {
+    .Login-Img{
+        width: 230px;
+        top:75%;
+        left: 25%;
+    }
+}

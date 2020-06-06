@@ -1,12 +1,14 @@
 import React from 'react';
+import {Route} from 'react-router-dom';
 import Home from './components/home'
-
+import Login from './components/login'
 class App extends React.Component {
   state = {  }
   render() { 
     return (  
       <div>
-        <Home/>
+        <Route path='/' component={Home} exact/>
+        <Route path='/login' component={Login}/>
       </div>
     );
   }
