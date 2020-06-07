@@ -44,6 +44,16 @@ const dataPrice = [
 ]
 
 class Home extends React.Component {
+
+    openSideNav = () => {
+        document.getElementById('SideNav').style.width='100%'
+    }
+
+    closeSideNav = () => {
+        document.getElementById('SideNav').style.width='0'
+    }
+
+
     renderPricing = () => {
         return dataPrice.map((val) => {
             return(
@@ -63,14 +73,6 @@ class Home extends React.Component {
         })
     }
 
-    openSideNav = () => {
-        document.getElementById('SideNav').style.width='100%'
-    }
-
-    closeSideNav = () => {
-        document.getElementById('SideNav').style.width='0'
-    }
-
     render() { 
         return (  
             <div className='Home-Container'>
@@ -88,7 +90,7 @@ class Home extends React.Component {
                     </div>
                 </section>
                 <section id='Home' className='Header-Container' >
-                    <div className='Navbar-Container'>
+                    <div id='navbar' className='Navbar-Container'>
                         <ul>
                             <li style={{float : 'left'}}>
                                 <a><span>SOFT</span><span style={{color:'#964CF7'}}>HOUSE</span></a>

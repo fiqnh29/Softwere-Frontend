@@ -12,7 +12,7 @@ class Login extends React.Component {
                     <img src={LoginImg} className='Login-Img'/>
                     <div className='Login-Box'>
                         <input placeholder='Email' className='Login-Input' type='text'/><br/>
-                        <input placeholder='Password' className='Login-Input' type='text'/><br/>    
+                        <input placeholder='Password' className='Login-Input' type='password'/><br/>    
                         <button className='Login-Btn-Log'>Login</button>
                         <div className='Login-With'>
                             <p>Or login with :</p>
