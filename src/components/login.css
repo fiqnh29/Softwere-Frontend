@@ -1,27 +1,18 @@
 .Login-Container{
-    /* background: orange; */
     min-height: 100vh;
     display: flex;
     justify-content: center;
     background-image: url('./image/bg-log.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-
-
 }
-
 .Login-With button:focus{
     outline: none;
 }
 .Login-Box{
-    /* background: green; */
     margin: auto;
     width: 350px;
     z-index: 1;
-    
-
-
-
 }
 .Login-Input{
     width: 100%;
@@ -31,14 +22,10 @@
     border: none;
     font-size: 20px;
     transition: 220ms;
-    
-
 }
-
 .Login-Input:focus, .Login-Btn-Log:focus{
     outline: none
 }
-
 .Login-Btn-Log{
     width: 100%;
     padding: 15px;
@@ -49,7 +36,6 @@
     border-radius: 20px;    
     margin-bottom: 10px;
     color: #964CF7;
-
 }
 .Login-Btn-Log:hover{
     background: #F77987;
@@ -68,7 +54,6 @@
     height: 55px;
     border: none;
     border-radius: 50%;
-
 }
 .Login-With p{
     text-align: left;
@@ -81,11 +66,10 @@
     position: absolute;
     top: 55%;
     left: 50%;
-
-
 }
 
-/* Animation */
+/* ===================Animation================== */
+
 .Login-Input1{
     animation: Input1 2s normal;
     position: relative;

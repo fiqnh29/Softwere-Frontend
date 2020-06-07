@@ -1,24 +1,17 @@
 
+/* ================== Header =================== */
+*{
+    font-family: 'Sen', sans-serif;
+}
+
 .Header-Container{
     background-image: url('./image/bg-webwhite.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 50px;
-    /* border-bottom: 3px solid #9154FA; */
-
-
-}
-*{
-    /* font-family: 'ABeeZee', sans-serif; */
-    font-family: 'Sen', sans-serif;
-
-}
-*:focus{
-    outline: none;
 }
 .Navbar-Container{
     padding: 20px;
-    /* background: #333; */
     font-size: 25px;
     font-weight: 600;
 }
@@ -30,12 +23,10 @@ ul{
     margin: 0;
     padding: 0;
     overflow: hidden;
-
 }
 li{
     float: right;
 }
-
 li a{
     display: block;;
     color: black;
@@ -54,16 +45,11 @@ li a:hover{
     display: block;
     width: 0;
     border-bottom: 4px solid;
-    /* margin: 0 auto; */
     transition:all 0.3s linear 0s;
     color: #222;
 }
 .Nav-Resp a:hover::after{
     width: 100%;
-}
-.Header-Content{
-    /* background: orange; */
-    
 }
 .Header-Image{
     width: 60%;
@@ -76,16 +62,12 @@ li a:hover{
     padding: 20px;
 }
 .Header-Txt h1{
-    /* font-family: 'ABeeZee', sans-serif; */
     font-size: 150px;
     font-weight: 700;
     animation: Header-Title 1.5s normal;
     position: relative;
 }
-
-
 .Header-Txt p{
-    /* font-family: 'ABeeZee', sans-serif; */
     font-size: 30px;
     animation: Header-Subtitle 2s normal;
     position: relative;
@@ -96,40 +78,23 @@ li a:hover{
     width: 200px;
     font-size: 25px;
     padding: 10px;
-    /* border: 3px solid #FA6C6B; */
     border-radius: 40px;
     border: none;
     animation: Header-Login 2s normal;
     position: relative;
-    
 }
 .Login-Btn:hover{
     background: #625EB1;
 }
 .Login-Btn:focus{
     outline: none;
+}
 
-}
-@keyframes Header-Image {
-    from {top: -200px;}
-    to {top: 0;}
-}
-@keyframes Header-Title {
-    from {right: -300px;}
-    to {right: 0;}
-}
-@keyframes Header-Subtitle {
-    from {right: -500px;}
-    to {right: 0;}
-}
-@keyframes Header-Login {
-    from {left: -200px;}
-    to {left: 0;}
-}
-/* About Us */
+/* ================== About Us =================== */
+
 .About-Container{
     min-height: 500px;
-    background-image: linear-gradient(-225deg, #22E1FF 50%, #1D8FE1 40%, #625EB1 100%);;
+    background-image: linear-gradient(-225deg, rgb(34, 174, 255) 50%, #1D8FE1 70%, #625EB1 100%);;
     padding: 50px 0;
     margin: 20px;
     border-radius: 20px;
@@ -150,46 +115,36 @@ li a:hover{
     margin: auto;
 }
 
-/* Pricing */
+/* ================== Pricing =================== */
 
 .Pricing-Container{
-    background-image: linear-gradient(38deg, #22E1FF 50%, #1D8FE1 40%, #625EB1 100%);;
+    background-image: linear-gradient(38deg, rgb(72, 124, 236) 30%, #1D8FE1 70%, #625EB1 100%);;
     padding: 50px 0 30px 0;
     margin : 0 20px;
     border-radius: 20px;
 }
 .Pricing-Card{
-    /* box-shadow: 5px 5px 5px rgb(141, 141, 141); */
-    /* background: #6C63FF; */
     border-radius: 20px;
     color: white;
     position: relative;
     padding: 20px;
-    height: 100%;
     background: white;
     color: black;
     transition: all 150ms ease-in-out;
-
-
+    height: 100%;
 }
-
 .Pricing-Card:hover{
     transform: scale(1.1);
-
 }
 .Pricing-Card-Content h1{
-    /* background: pink; */
     margin-bottom: 30px;
 }
 .Pricing-Card-Content h3{
     margin-bottom: 30px;
 }
-.Pricing-Ul{
-    list-style-type: decimal;
 
-}
+/* ================== Contact =================== */
 
-/* Contact Us */
 .Contact-Container{
     padding: 50px 0;
 }
@@ -206,7 +161,8 @@ li a:hover{
     font-weight: 500;
 }
 
-/* Sidenav */
+/* ================== SideNav =================== */
+
 .Sidenav-Container{
     height: 100vh;
     background: white;
@@ -220,8 +176,6 @@ li a:hover{
     background-image: url('./image/sdn-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-
-
 }
 .SideNav-Logo a{
     padding: 10px;
@@ -247,19 +201,32 @@ li a:hover{
 }
 .Sidenav-Link li{
     float: left;
-
 }
 .Sidenav-Link li{
-    /* background: #1D8FE1; */
     display: inline-block;
     width: 100%;
     padding: 20px;
     font-size: 25px;
     font-weight: 600;
-
-    
 }
 
+
+@keyframes Header-Image {
+    from {top: -200px;}
+    to {top: 0;}
+}
+@keyframes Header-Title {
+    from {right: -300px;}
+    to {right: 0;}
+}
+@keyframes Header-Subtitle {
+    from {right: -500px;}
+    to {right: 0;}
+}
+@keyframes Header-Login {
+    from {left: -200px;}
+    to {left: 0;}
+}
 
 @media only screen and (max-width: 768px) {
     .Nav-Resp{
@@ -270,29 +237,24 @@ li a:hover{
     }
     .Nav-Container{
         padding: 0;
-
     }
     li a{
         padding: 0;
     }
-    
 }
 @media only screen and (max-width: 1700px) {
     .Header-Txt h1{
         font-size: 80px;
-    }
-    
+    }   
 }
-@media only screen and (max-width: 1200px) {
-    
+@media only screen and (max-width: 1200px) {  
     .Header-Image{
         width: 90%;
         margin: auto;
     }
     .Contact-Container{
         text-align: center;
-    }
-    
+    }   
 }
 
 @media only screen and (max-width: 1999px) {
@@ -312,7 +274,6 @@ li a:hover{
     }
     .Header-Container{
         padding-bottom: 20px;
-
     }
 }
 @media only screen and (max-width: 490px) {
@@ -324,7 +285,6 @@ li a:hover{
     }
     .Header-Container{
         border: none;
-
     }
 }
 
@@ -339,8 +299,7 @@ li a:hover{
 }
 @media only screen and (max-width: 400px) {
     .Pricing-Card-Content h1{
-        font-size: 25px;
-        
+        font-size: 25px;        
     }
     .Contact-Txt p{
         font-size: 20px;

@@ -1,8 +1,8 @@
 import React from 'react';
-import './login.css';
+import LoginImg from './image/undraw_team_work_k80m.svg'
 import {FcGoogle} from 'react-icons/fc'
 import {GrFacebookOption, GrTwitter} from 'react-icons/gr'
-import LoginImg from './image/undraw_team_work_k80m.svg'
+import './login.css';
 class Login extends React.Component {
     state = {  }
     render() { 
