@@ -9,6 +9,7 @@
 
 
 }
+
 .Login-With button:focus{
     outline: none;
 }
@@ -16,7 +17,9 @@
     /* background: green; */
     margin: auto;
     width: 350px;
-    z-index: 1
+    z-index: 1;
+    
+
 
 
 }
@@ -28,7 +31,10 @@
     border: none;
     font-size: 20px;
     transition: 220ms;
+    
+
 }
+
 .Login-Input:focus, .Login-Btn-Log:focus{
     outline: none
 }
@@ -79,6 +85,39 @@
 
 }
 
+/* Animation */
+.Login-Input1{
+    animation: Input1 2s normal;
+    position: relative;
+}
+.Login-Input2{
+    animation: Input2 2s normal;
+    position: relative;
+}
+.Login-Btn-Log{
+    animation: Login-Btn 2s normal;
+    position: relative;
+}
+.Login-With{
+    animation: Login-With 2s normal;
+    position: relative;
+}
+@keyframes Input1 {
+    from {right: -200px;}
+    to {right: 0;}
+}
+@keyframes Input2 {
+    from {left: -200px;}
+    to {left: 0;}
+}
+@keyframes Login-Btn {
+    from {bottom: -200px;}
+    to {bottom: 0;}
+}
+@keyframes Login-With {
+    from {right: -200px;}
+    to {right: 0;}
+}
 @media only screen and (max-width: 650px) {
     .Login-Box{
         width: 300px;

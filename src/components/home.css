@@ -69,6 +69,8 @@ li a:hover{
     width: 60%;
     margin: auto;
     margin-top: 30%;
+    animation: Header-Image 1s normal;
+    position: relative;
 }
 .Header-Txt{
     padding: 20px;
@@ -77,13 +79,53 @@ li a:hover{
     /* font-family: 'ABeeZee', sans-serif; */
     font-size: 150px;
     font-weight: 700;
-    
+    animation: Header-Title 1.5s normal;
+    position: relative;
 }
+
+
 .Header-Txt p{
     /* font-family: 'ABeeZee', sans-serif; */
     font-size: 30px;
+    animation: Header-Subtitle 2s normal;
+    position: relative;
 }
+.Login-Btn{
+    background: rgb(48,195,238);
+    color: white;
+    width: 200px;
+    font-size: 25px;
+    padding: 10px;
+    /* border: 3px solid #FA6C6B; */
+    border-radius: 40px;
+    border: none;
+    animation: Header-Login 2s normal;
+    position: relative;
+    
+}
+.Login-Btn:hover{
+    background: #625EB1;
+}
+.Login-Btn:focus{
+    outline: none;
 
+}
+@keyframes Header-Image {
+    from {top: -200px;}
+    to {top: 0;}
+}
+@keyframes Header-Title {
+    from {right: -300px;}
+    to {right: 0;}
+}
+@keyframes Header-Subtitle {
+    from {right: -500px;}
+    to {right: 0;}
+}
+@keyframes Header-Login {
+    from {left: -200px;}
+    to {left: 0;}
+}
 /* About Us */
 .About-Container{
     min-height: 500px;
@@ -218,24 +260,7 @@ li a:hover{
     
 }
 
-.Login-Btn{
-    background: rgb(48,195,238);
-    color: white;
-    width: 200px;
-    font-size: 25px;
-    padding: 10px;
-    /* border: 3px solid #FA6C6B; */
-    border-radius: 40px;
-    border: none;
-    
-}
-.Login-Btn:hover{
-    background: #625EB1;
-}
-.Login-Btn:focus{
-    outline: none;
 
-}
 @media only screen and (max-width: 768px) {
     .Nav-Resp{
         display: none;
