@@ -7,6 +7,10 @@
     background-size: cover;
     background-repeat: no-repeat;
 
+
+}
+.Login-With button:focus{
+    outline: none;
 }
 .Login-Box{
     /* background: green; */

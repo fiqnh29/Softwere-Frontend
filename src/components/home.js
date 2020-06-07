@@ -79,17 +79,20 @@ class Home extends React.Component {
                         <button className='SideNav-Btn-Close' onClick={this.closeSideNav}><RiCloseLine size={45}/></button>
                     </div>
                     <div className='Sidenav-Link'>
-                        <li ><a href='#about'>About</a></li>
-                        <li ><a href='#pricing'>Pricing</a></li>
-                        <li ><a href='#contact'>Contact</a></li>
-                        <li ><a href='/login'>Login</a></li>
+                        <li className='SideNav-Logo'><a onClick={this.closeSideNav} href='#Home'><span style={{color:'black'}}>SOFT</span><span style={{color:'#964CF7'}}>HOUSE</span></a></li>
+                        <li ><a onClick={this.closeSideNav} href='#about'>About</a></li>
+                        <li ><a onClick={this.closeSideNav} href='#pricing'>Pricing</a></li>
+                        <li ><a onClick={this.closeSideNav} href='#contact'>Contact</a></li>
+                        <li ><a onClick={this.closeSideNav} href='/login'>Login</a></li>
 
                     </div>
                 </section>
-                <section  className='Header-Container' >
+                <section id='Home' className='Header-Container' >
                     <div className='Navbar-Container'>
                         <ul>
-                            <li style={{float : 'left'}}><a >Logo</a></li>
+                            <li style={{float : 'left'}}>
+                                <a><span>SOFT</span><span style={{color:'#964CF7'}}>HOUSE</span></a>
+                            </li>
                             <li className='Nav-Resp'><a href='#contact'>Contact</a></li>
                             <li className='Nav-Resp'><a href='#pricing'>Pricing</a></li>
                             <li className='Nav-Resp'><a href='#about'>About</a></li>
