@@ -71,9 +71,9 @@ class Home extends React.Component {
                             <li style={{float : 'left'}}>
                                 <a><span>SOFT</span><span style={{color:'#964CF7'}}>HOUSE</span></a>
                             </li>
-                            <li className='Nav-Resp'><a href='#contact'>Contact</a></li>
-                            <li className='Nav-Resp'><a href='#pricing'>Pricing</a></li>
-                            <li className='Nav-Resp'><a href='#about'>About</a></li>
+                            <li className='Nav-Resp'><a href='#contact'>CONTACT</a></li>
+                            <li className='Nav-Resp'><a href='#pricing'>PRICING</a></li>
+                            <li className='Nav-Resp'><a href='#about'>ABOUT</a></li>
                             <li className='Menu-Bars'>
                                 <button onClick={this.openSideNav} className='SideNav-Btn'>
                                     <RiMenu3Line size={35}/>
